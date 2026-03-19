@@ -113,7 +113,7 @@ create table ocupar
     fecha_inicio date not null,
     fecha_fin date,
 
-    primary key (id_cuarto, id_paciente, fecha_inicio)
+    primary key (id_cuarto, id_paciente, fecha_inicio),
 
     foreign key (id_cuarto) references cuarto(numero),
     foreign key (id_paciente) references paciente(id)
